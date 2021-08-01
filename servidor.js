@@ -7,6 +7,14 @@ const User = mongoose.model('user');
 const app = express();
 
 app.use(express.json());
+app.use((req, res, next) => {
+    //console.log("Acessou o Middleware!");
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", 'GET,PUT,POST,DELETE');
+    app.use(cors());
+    next();
+});
+
 
 mongoose.connect('mongodb://localhost/database', {
     useNewUrlParser: true,
@@ -81,6 +89,6 @@ app.delete("/user/:id", (req, res) => {
     });
 });
 
-app.listen(process.env.PORT ||3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Servidor iniciado na porta 3000: http://localhost:3000/");
 });
