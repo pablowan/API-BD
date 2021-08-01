@@ -2,8 +2,9 @@
   "name": "bd-web",
   "version": "1.0.0",
   "description": "--------------------------------------\r SEQUENCIA PARA CRIAR O PROJETO\r --------------------------------------\r Criar o arquivo package\r npm init",
-  "main": "index.js",
+  "main": "servidor.js",
   "scripts": {
+    "start": "nodemon servidor.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
