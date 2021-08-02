@@ -9,9 +9,10 @@ const app = express();
 app.use(express.json());
 
 
-mongoose.connect('mongodb://localhost/database', {
+mongoose.connect("mongodb+srv://test:test@apibd.xj5lg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true
+    
 }).then(() => {
     console.log("Conexão com MongoDB realizada com sucesso!");
 }).catch((erro) => {
