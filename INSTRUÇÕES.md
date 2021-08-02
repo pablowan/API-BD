@@ -28,5 +28,5 @@ COMO RODAR O PROJETO
 npm install
 
 //Rodar o projeto usando o nodemon 
-nodemon app.js
-//Use o insomnia para testar as requisições
+nodemon servidor.js
+//Use o insomnia para testar as requisições e interagir com o banco
