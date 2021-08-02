@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "61074ce0e4975d1b00aaf65e"
+  },
+  "nome": "Pablo",
+  "endereco": "Rua 2",
+  "cidade": "Padre Carvalho",
+  "telefone": "0980989080",
+  "email": "pablojuniorpc@gmail.com",
+  "createdAt": {
+    "$date": "2021-08-02T01:39:44.037Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T01:39:44.037Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61074ce7e4975d1b00aaf660"
+  },
+  "nome": "Pablo",
+  "endereco": "Rua 2",
+  "cidade": "Padre Carvalho",
+  "telefone": "0980989080",
+  "email": "pablojuniorpc@gmail.com",
+  "createdAt": {
+    "$date": "2021-08-02T01:39:51.511Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T01:39:51.511Z"
+  },
+  "__v": 0
+}]
