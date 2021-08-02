@@ -1,3 +1,11 @@
+/* 
+Descricao :
+Basicamente o arquivo que vai manipular e importar o banco de dados da nossa API, vamos buscar/trablhar com todas as informações contidas no nosso arquivo database.json.
+Utilizando esse arquivo JS podemos realizar operações com esses dados, GET, POST, PUT E DELETE... Essa será nossa página principal, terá todos os imports e comandos necessários para essa integração.
+Aluno : Pablo Junio Souza Santos
+Data : 28/ 07 / 2021
+ 
+*/
 const express = require('express');
 const mongoose = require('mongoose');
 
@@ -9,7 +17,7 @@ const app = express();
 app.use(express.json());
 
 
-mongoose.connect("mongodb+srv://test:test@apibd.xj5lg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+mongoose.connect('mongodb://localhost/database', {
     useNewUrlParser: true,
     useUnifiedTopology: true
     
